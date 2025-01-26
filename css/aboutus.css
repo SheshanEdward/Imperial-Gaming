@@ -1,0 +1,165 @@
+header {
+    height: 2.2vh;
+}
+
+
+/* Fonts */
+
+#page-title {
+    font-size: 7.5vw;
+    font-weight: bolder;
+    color: #6A1E55;
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width:768px) {
+
+    #page-title {
+        margin-top: 40px;
+    }
+}
+
+#intro-paragraph {
+    color: white;
+    font-size: 3vw;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+@media (min-width:768px) {
+
+    #intro-paragraph {
+        font-size: 20px;
+    }
+}
+
+#intro-paragraph p {
+    color: #6A1E55;
+    font-size: 4vw;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+
+@media (min-width:768px) {
+
+    #intro-paragraph p {
+        font-size: 30px;
+    }
+}
+
+#branch-introduction {
+    font-size: 3vw;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+@media (min-width:768px) {
+
+    #branch-introduction {
+        font-size: 20px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+#branch-container p {
+    color: #6A1E55;
+    font-size: 4vw;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 10px;
+    margin-bottom: 2px;
+}
+
+@media (min-width:768px) {
+
+    #branch-container p {
+        font-size: 30px;
+    }
+}
+
+th {
+    font-size: 3vw;
+}
+
+td {
+    text-align: center;
+    font-size: 2.4vw;
+}
+
+@media (min-width:768px) {
+
+    th, td {
+        font-size: 20px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Containers */
+#branch-container {
+    border: 3px solid #6A1E55;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: white;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+#media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 2px;
+    padding: 2px;
+}
+
+@media (min-width:768px) {
+
+    #media-container {
+        flex-direction: row;
+        width: 45%;
+        margin-left: 5%;
+    }
+}
+
+#media-container img,iframe,table {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+/* Map */
+iframe {
+    height: 25vh;
+}
+
+@media (min-width:768px) {
+
+    iframe {
+        height: 350px;
+    }
+}
+
+/* Table */
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid #6A1E55;
+}
+
+@media (min-width:768px) {
+
+    table {
+        height: 350px;
+    }
+}

@@ -1,0 +1,74 @@
+/* This css file contains styles of all subpages */
+
+body {
+    margin: 0;
+    background-color: black;
+    font-style: serif;
+}
+
+/* Images */
+#img-container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+}
+
+#img-container1 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Fonts */
+
+#attribution {
+    color: #A64D79;
+    font-size: 1vw;
+    margin-left: 2.5%;
+    margin-top: 0;
+}
+
+#info-heading {
+    font-size: 6vw;
+    color: #6A1E55;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#information {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: white;
+    font-size: 3vw;
+    padding-bottom: 5px;
+}
+
+#information p {
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+@media (min-width:768px) {
+
+    #information {
+        font-size: 20px;
+    }
+}
+
+/* Containers */
+
+#introduction {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#introduction p {
+    display: inline;
+    font-weight: bolder;
+    color: #A64D79;
+    margin: 0;
+}

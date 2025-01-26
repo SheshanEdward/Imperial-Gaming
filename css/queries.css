@@ -1,0 +1,138 @@
+header {
+    height: 2.2vh;
+}
+
+/* Fonts */
+#page-title {
+    font-size: 7.5vw;
+    font-weight: bolder;
+    color: #6A1E55;
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width:768px) {
+
+    #page-title {
+        margin-top: 40px;
+    }
+}
+
+#introduction {
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: white;
+    font-size: 3vw;
+}
+
+#introduction p {
+    color: #6A1E55;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+@media (min-width:768px) {
+
+    #introduction {
+        font-size: 20px;
+    }
+
+    #introduction p {
+        font-size: 30px;
+    }
+}
+
+#question p {
+    color: white;
+    font-size: 4vw;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+#answer p {
+    color: white;
+    font-size: 3vw;
+    margin-left: 10px;
+}
+
+@media (min-width:768px) {
+
+    #question p {
+        font-size: 30px;
+    }
+    
+    #answer p {
+        font-size: 20px;
+    }
+}
+
+
+/* Containers */
+
+#faq-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#faq {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-left: 2%;
+    border: 3px solid #3B1C32;
+    border-radius: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+#question {
+    background-color: #3B1C32;
+    width: 100%;
+    height: fit-content;
+}
+
+#answer {
+    width: 100%;
+    height: fit-content;
+}
+
+/* Form */
+form {
+    color: white;
+    font-size: 3vw;
+    margin-left: 3%;
+    width: 90%;
+    background-color: #3B1C32;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+textarea {
+    width: 90%;
+    height: 50%;
+}
+
+input[type="submit"],input[type="reset"] {
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-color: black;
+    border-radius: 10px;
+    background-color: black;
+}
+
+@media (min-width:768px) {
+
+    form {
+        font-size: 20px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    input[type="text"],input[type="tel"],input[type="email"] {
+        width: 35%;
+    }
+}

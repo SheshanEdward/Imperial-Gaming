@@ -1,0 +1,368 @@
+/* This css file contains styling common to all webpages of Imperial Gaming */
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: serif;
+}
+
+
+/* Head Image container - Beginning */
+/*The image of the store's logo is used as an alternate navigation icon which lands the user in the home page */
+
+/* Head Image container - Mobile View */
+#headimg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw;
+    height: 10vh;
+    padding: 7px;
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 0;
+    z-index: 1000;
+}
+
+#headimg-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Head Image container - Desktop View */
+
+@media (min-width:768px) {
+
+    #headimg-container {
+        position: fixed;
+        top: 0;
+        margin-left: 0;
+        margin-top: 0;
+        width: 58px;
+        height: 45px;
+        background-color: black;
+        padding: 7px;
+    }
+} /* Head Image container - End */
+
+
+
+/* Navigation Bar - Beginning */
+/* Navigation Bar - Mobile View */
+#navbar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    border: 2px solid #6A1E55;
+    padding: 0;
+    height: fit-content;
+    align-items: center;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2.5vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* Navigation Bar - Desktop View */
+@media (min-width:768px) {
+    #navbar {
+        top: 0;
+        margin-left: 70px;
+        height: 56px;
+        width: 97%;
+    }
+
+    #box {
+        height: 47px;
+        font-size: 16px;
+        text-align: center;
+    }
+    
+    #box:hover {
+        background-color: #6A1E55;
+    }
+}/* Navigation Bar - End */
+
+
+
+
+
+/* Footer - Beginning */
+/* Footer - Mobile view */
+
+/* Footer - Main (This container holds all the elements in the footer) */
+/* Mobile View */
+#footer-container {
+    background-color: #3B1C32;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+#footer-heading {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Desktop View */
+@media (min-width:768px) {
+
+    #footer-container {
+        bottom: 0;
+        margin-bottom: 0;
+    }
+
+    #footer-heading {
+        text-align: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+
+/*Footer - Hyperlink Container (This container holds the 03 hyperlink sections in the footer) */
+#hyperlink-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/*Footer - Pages (Holds the hyperlinks to navigate between pages) */
+/* Mobile View */
+#pagelink-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#pagelink-section a {
+    font-size: 2.5vw;
+    text-decoration: none;
+    color: white;
+    padding-top: 7px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#pagelink-section p {
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Desktop View */
+@media (min-width:768px) {
+
+    #pagelink-section a {
+        font-size: 20px;
+    }
+
+    #pagelink-section p {
+        font-size: 25px;
+    }
+}
+
+/*Footer - Phone & email (Contains the contact number and email address) */
+/* Mobile View */
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#contact-box a {
+    padding-top: 4px;
+    text-decoration: none;
+    font-size: 2.5vw;
+    color: white;
+}
+
+#contact-box p {
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#contact-box-branch {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-bottom: 20px;
+}
+
+#contact-box-branch p {
+    margin-top: 4px;
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact-box-line {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact-box-line a {
+    margin-top: 2px;
+}
+
+@media (min-width:768px) {
+    #contact-box-branch {
+        margin-bottom: 40px;
+    }
+    
+    #contact-box-line a {
+        margin-top: 0;
+    }
+}
+
+/*Footer - Phone & email - icons */
+#contact-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vh;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#contact-box-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Desktop View */
+@media (min-width:768px) {
+
+    #contact-box a {
+        font-size: 20px;
+    }
+
+    #contact-box p {
+        font-size: 25px;
+    }
+
+    #contact-box-branch p {
+        font-size: 25px;
+    }
+
+    #contact-box-icon {
+        padding-top: 5px;
+    }
+}
+
+
+
+/* Footer - Social Media (Holds the hyperlinks to the social media pages) */
+/* Mobile View */
+#social-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
+
+#social-box p {
+    color: white;
+    font-size: 3vw;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#social-box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6vw;
+    height: 6vh;
+}
+
+#social-box-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#social-box a {
+    margin-bottom: 10px;
+}
+
+/* Desktop View */
+
+@media (min-width:768px) {
+
+    #social-box p {
+        font-size: 25px;
+    }
+}
+
+/* Footer - Copyright (copyright section) */
+/* Mobile View */
+
+#copyright-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#copyright-box p {
+    margin-top: 1.5px;
+    font-size: 2vw;
+    color: white;
+}
+
+#copyright-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 2vh;
+}
+
+#copyright-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Desktop View */
+@media (min-width:768px) {
+
+    #copyright-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+    }
+
+    #copyright-box p {
+        font-size: 15px;
+    }
+}/* Footer - End */

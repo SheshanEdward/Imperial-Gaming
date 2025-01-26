@@ -1,0 +1,67 @@
+header {
+    height: 2.2vh;
+}
+
+/* Fonts */
+#page-title {
+    font-size: 7.5vw;
+    font-weight: bolder;
+    color: #6A1E55;
+    text-align: center;
+    margin: 0;
+}
+
+#sub-title {
+    font-size: 5vw;
+    font-weight: bolder;
+    color: #6A1E55;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+
+    #page-title {
+        margin-top: 40px;
+    }
+}
+
+#introduction {
+    margin-top: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    color: white;
+    font-size: 3vw;
+}
+
+#introduction p {
+    color: #6A1E55;
+    font-size: 4vw;
+    font-weight: bolder;
+}
+
+@media (min-width:768px) {
+
+    #introduction {
+        font-size: 20px;
+    }
+
+    #introduction p {
+        font-size: 30px;
+    }
+}
+
+/* Containers */
+
+#img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2.5%;
+    width: 95%;
+    height: auto;
+}
+
+#img-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
