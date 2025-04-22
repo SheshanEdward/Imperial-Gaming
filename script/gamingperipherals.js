@@ -1,4 +1,4 @@
-fetch('../JSON/priceinfo.json')
+fetch('./JSON/priceinfo.json')
     .then(response => response.json())
     .then(data => {
         data.forEach(product => {
