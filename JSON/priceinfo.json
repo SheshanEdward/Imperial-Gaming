@@ -1,0 +1,49 @@
+[
+    {"code" : "prod01", "name" : "PlayStation 5", "price" : "150,000", "image" : "../img/copy/ps5.jpg"},
+
+    {"code" : "prod02", "name" : "PlayStation 5 Slim", "price" : "170,000", "image" : "../img/copy/ps5-slim.jpg"},
+
+    {"code" : "prod03", "name" : "PlayStation 5 Pro", "price" : "200,000", "image" : "../img/copy/ps5-pro.jpg"},
+
+    {"code" : "prod04", "name" : "Xbox Series X", "price" : "200,000", "image" : "../img/copy/xbox-x.jpg"},
+
+    {"code" : "prod05", "name" : "Xbox Series S", "price" : "150,000", "image" : "../img/copy/xbox-s.jpg"},
+
+    {"code" : "prod06", "name" : "Logitech G Cloud", "price" : "130,000", "image" : "../img/copy/logitech-g-cloud.jpg"},
+
+    {"code" : "prod07", "name" : "Nintendo Switch", "price" : "100,000", "image" : "../img/copy/switch.jpg"},
+
+    {"code" : "prod08", "name" : "Nintendo Switch Lite", "price" : "70,000", "image" : "../img/copy/switch-lite.jpg"},
+
+    {"code" : "prod09", "name" : "Asus ROG Cetra", "price" : "20,000", "image" : "../img/copy/asus-rog-cetra.jpg"},
+
+    {"code" : "prod10", "name" : "Razer Hammerhead", "price" : "22,000", "image" : "../img/copy/razer-hammerhead.jpg"},
+
+    {"code" : "prod11", "name" : "Razer Hammerhead Pro", "price" : "25,000", "image" : "../img/copy/razor-hammerhead-pro.jpg"},
+
+    {"code" : "prod12", "name" : "HyperX Cloud II", "price" : "34,000", "image" : "../img/copy/hyperx-cloud-ii-wireless-headset.jpg"},
+
+    {"code" : "prod13", "name" : "Logitech G775", "price" : "37,000", "image" : "../img/copy/logitech-g733-lightspeed-headset.jpg"},
+
+    {"code" : "prod14", "name" : "Logitech T330", "price" : "41,000", "image" : "../img/copy/logitech-headset.jpg"},
+
+    {"code" : "prod15", "name" : "SteelSeries AeroX 9", "price" : "28,000", "image" : "../img/copy/steelseries-aerox-9-wireless-mouse.jpg"},
+
+    {"code" : "prod16", "name" : "Razor Basilisk III", "price" : "27,000", "image" : "../img/copy/razor-basilisk-v3.jpg"},
+
+    {"code" : "prod17", "name" : "Logitech G02 Hero", "price" : "30,000", "image" : "../img/copy/logitech-g502-hero-rgb-mouse.jpg"},
+
+    {"code" : "prod18", "name" : "HyperX Alloy", "price" : "25,000", "image" : "../img/copy/hyperx-alloy.jpg"},
+
+    {"code" : "prod19", "name" : "Razer Huntsman", "price" : "30,000", "image" : "../img/copy/razer-huntsman.jpg"},
+
+    {"code" : "prod20", "name" : "Razer Ornata V3", "price" : "34,000", "image" : "../img/copy/razer-ornata-v3.jpg"},
+
+    {"code" : "prod21", "name" : "PS5 Controller", "price" : "33,000", "image" : "../img/copy/ps-controller.jpg"},
+
+    {"code" : "prod22", "name" : "Xbox Controller", "price" : "31,000", "image" : "../img/copy/xbox-controller.jpg"},
+
+    {"code" : "prod23", "name" : "Nintemdo Switch Controller", "price" : "28,000", "image" : "../img/copy/switch-controller.jpg"},
+
+    {"code" : "prod24", "name" : "Nintendo Switch 2", "price" : "185,000", "image" : "../img/copy/switch-2.jpg"}
+]

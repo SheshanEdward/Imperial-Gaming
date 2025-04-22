@@ -1,0 +1,24 @@
+#page-title {
+    font-size: 7.5vw;
+    font-weight: bolder;
+    color: #6A1E55;
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width:768px) {
+
+    #page-title {
+        margin-top: 40px;
+    }
+}
+
+
+
+
+/* Table */
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid white;
+    color: white;
+}

@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Events
+        My Cart
     </title>
     <link rel="stylesheet" href="./css/commonstyles.css">
-    <link rel="stylesheet" href="./css/events.css">
     <link rel="icon" href="./img/icons/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/checkout.css">
 </head>
 <body>
     <header>
@@ -18,38 +18,29 @@
     </header>
 
     <main>
-        <p id="page-title">Events</p>
-        <p id="sub-title">Imperial Gaming’s Beach Cleanup Drive: <br> A Step Towards a Cleaner Coastline</p>
-        <div id="img-container">
-            <img src="./img/copy/beach-cleanup.jpeg" alt="Beach Cleanup">
-        </div>
-        <div id="introduction">
-            <p>About the Initiative</p>
-            Imperial Gaming is excited to announce its latest CSR initiative—a beach
-            cleanup drive aimed at preserving Sri Lanka’s stunning coastal areas. This
-            community-driven effort will take place at two iconic locations: Galle Face,
-            Colombo, and Galle Fort Beach, Galle. The cleanup
-            aims to remove litter and debris that harm marine ecosystems while raising
-            awareness about the importance of protecting our environment.
+        <p id="page-title">Checkout</p>
 
-            <p>Our Commitment to the Community</p>
-            As a company passionate about gaming and fostering meaningful connections,
-            Imperial Gaming believes in giving back to the community in impactful ways.
-            Our team, along with volunteers, will work together to restore these
-            beloved beaches to their pristine state, creating cleaner, healthier
-            environments for both residents and visitors to enjoy.
 
-            <p>How You Can Participate</p>
-            Participants will be provided with all necessary tools and safety gear, and
-            refreshments will be available to keep everyone energized throughout the day.
-            We invite all eco-conscious individuals and organizations to join hands with
-            us in making a difference.
 
-            <p>Join Us Today</p>
-            Together, we can protect these beautiful coastal landmarks for future
-            generations. Let’s combine the spirit of teamwork that gaming teaches us
-            with the goal of sustaining our planet.
-        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody class="cartInfo"></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td class="totalAmount">LKR 0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
     </main>
 
     <footer>
@@ -119,4 +110,5 @@
         </div>
     </nav>
 </body>
+<script src="./script/checkout.js"></script>
 </html>

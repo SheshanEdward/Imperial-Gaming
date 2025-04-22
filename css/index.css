@@ -91,7 +91,7 @@ header {
 @media (min-width:768px) {
 
     #sub-section {
-        flex-direction: row;
+        flex-direction: row-reverse;
         justify-content: space-around;
     }
 }
