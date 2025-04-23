@@ -14,6 +14,7 @@ orderItems.forEach(orderItem => {
     <td>${orderItem.price}</td>
     <td><input type="number" min="1" step="1" class="tableQty" value="${orderItem.qty}" data-code="${orderItem.code}"></td>
     <td class="tablesubTot">LKR ${subTot.toFixed(2)}</td>
+    <td><button class="deleteItem" data-code="${orderItem.code}">Delete</button></td>
     `
     orderTable.appendChild(tableRow);
 })
@@ -27,6 +28,15 @@ let total = 0;
 });
 
 orderTotal.textContent = `LKR ${total.toFixed(2)}`;
+
+
+function updateTotal() {
+    let total = 0;
+    document.querySelectorAll('.tablesubTot').forEach(cell => {
+        total += parseFloat(cell.textContent.replace('LKR ', ''));
+    });
+    document.querySelector('.totalOrder').textContent = `LKR ${total.toFixed(2)}`
+}
 
 
 document.querySelectorAll('.tableQty').forEach(updateQty => {
@@ -68,3 +78,26 @@ document.querySelectorAll('.tableQty').forEach(updateQty => {
         }
     });
 });
+
+
+document.querySelectorAll('.deleteItem').forEach(button => {
+    button.addEventListener('click', () => {
+        const code = button.dataset.code;
+
+        let orderItems = [];
+        try {
+            const stored = JSON.parse(localStorage.getItem('orderItems'));
+            if (Array.isArray(stored)) {
+                orderItems = stored;
+            }
+        } catch (e) {
+            console.error('Invalid data in storage');
+        }
+
+        orderItems = orderItems.filter(item => item.code !== code);
+        localStorage.setItem('orderItems', JSON.stringify(orderItems));
+
+        button.closest('tr').remove();
+        updateTotal();
+    })
+})
