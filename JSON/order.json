@@ -1,0 +1,35 @@
+[
+    {"code": "Oj1", "name": "Intel Core i9-13900K", "price": "65,000", "image": ""},
+    {"code": "Oj2", "name": "AMD Ryzen 9 7950X", "price": "60,000", "image": ""},
+    {"code": "Oj3", "name": "Intel Core i7-13700K", "price": "50,000", "image": ""},
+    {"code": "Oj4", "name": "AMD Ryzen 7 7700X", "price": "45,000", "image": ""},
+    {"code": "Oj5", "name": "Intel Core i5-13600K", "price": "40,000", "image": ""},
+    {"code": "Oj6", "name": "AMD Ryzen 5 7600X", "price": "38,000", "image": ""},
+  
+    {"code": "Oj7", "name": "NVIDIA GeForce RTX 4090", "price": "200,000", "image": ""},
+    {"code": "Oj8", "name": "AMD Radeon RX 7900 XTX", "price": "120,000", "image": ""},
+    {"code": "Oj9", "name": "NVIDIA GeForce RTX 4080", "price": "160,000", "image": ""},
+    {"code": "Oj10", "name": "AMD Radeon RX 7800 XT", "price": "90,000", "image": ""},
+    {"code": "Oj11", "name": "NVIDIA GeForce RTX 4070", "price": "80,000", "image": ""},
+    {"code": "Oj12", "name": "AMD Radeon RX 7700 XT", "price": "70,000", "image": ""},
+  
+    {"code": "Oj13", "name": "ASUS ROG Strix Z790-E", "price": "55,000", "image": ""},
+    {"code": "Oj14", "name": "MSI MPG X670E Carbon", "price": "52,000", "image": ""},
+    {"code": "Oj15", "name": "Gigabyte Z690 AORUS Master", "price": "50,000", "image": ""},
+    {"code": "Oj16", "name": "ASRock B650M Pro RS", "price": "28,000", "image": ""},
+    {"code": "Oj17", "name": "ASUS TUF Gaming B660M-PLUS", "price": "30,000", "image": ""},
+    {"code": "Oj18", "name": "MSI MAG B550 TOMAHAWK", "price": "35,000", "image": ""},
+  
+    {"code": "Oj19", "name": "Corsair Vengeance LPX 16GB DDR4", "price": "6,000", "image": ""},
+    {"code": "Oj20", "name": "G.SKILL Trident Z RGB 32GB DDR4", "price": "12,000", "image": ""},
+    {"code": "Oj21", "name": "Kingston FURY Beast 16GB DDR5", "price": "10,000", "image": ""},
+    {"code": "Oj22", "name": "Crucial Ballistix 32GB DDR4", "price": "11,000", "image": ""},
+  
+    {"code": "Oj23", "name": "Samsung 980 PRO 1TB NVMe SSD", "price": "13,000", "image": ""},
+    {"code": "Oj24", "name": "Western Digital Black SN850X 2TB", "price": "22,000", "image": ""},
+    {"code": "Oj25", "name": "Crucial MX500 1TB SATA SSD", "price": "8,000", "image": ""},
+    {"code": "Oj26", "name": "Seagate Barracuda 2TB HDD", "price": "6,000", "image": ""},
+    {"code": "Oj27", "name": "Samsung T7 Shield 1TB Portable SSD", "price": "14,000", "image": ""},
+    {"code": "Oj28", "name": "Kingston A2000 1TB NVMe SSD", "price": "9,000", "image": ""}
+  ]
+  

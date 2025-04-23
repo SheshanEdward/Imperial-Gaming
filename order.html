@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        My Cart
+        Order
     </title>
     <link rel="stylesheet" href="./css/commonstyles.css">
     <link rel="icon" href="./img/icons/favicon-32x32.png">
-    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="stylesheet" href="./css/order.css">
 </head>
 <body>
     <header>
@@ -18,9 +18,49 @@
     </header>
 
     <main>
-        <p id="page-title">Checkout</p>
+        <p id="page-title">Products</p>
 
+        <section>
+            <p>Processors</p>
 
+            <div id="comp-parts">
+                <div id="parts" class="order" data-order="Oj1">
+                    <div id="img-container">
+                        <img class="orderImage" src="" alt="Product image">
+                        <div id="price" class="orderPrice"></div>
+                    </div>
+                    <div id="name" class="orderName"></div>
+                    <div id="inputCont">
+                        <input min="1" step="1" class="orderQty" type="number" placeholder="Please set a quantity">
+                        <button type="button" class="addtoCart" id="productbtn1">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div id="parts" class="order" data-order="Oj2">
+                    <div id="img-container">
+                        <img class="orderImage" src="" alt="Product image">
+                        <div id="price" class="orderPrice"></div>
+                    </div>
+                    <div id="name" class="orderName"></div>
+                    <div id="inputCont">
+                        <input min="1" step="1" class="orderQty" type="number" placeholder="Please set a quantity">
+                        <button type="button" class="addtoCart" id="productbtn1">Add to Cart</button>
+                    </div>
+                </div>
+    
+                <div id="parts" class="order" data-order="Oj3">
+                    <div id="img-container">
+                        <img class="orderImage" src="" alt="Product image">
+                        <div id="price" class="orderPrice"></div>
+                    </div>
+                    <div id="name" class="orderName"></div>
+                    <div id="inputCont">
+                        <input min="1" step="1" class="orderQty" type="number" placeholder="Please set a quantity">
+                        <button type="button" class="addtoCart" id="productbtn1">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <table>
             <thead>
@@ -40,7 +80,7 @@
             </tfoot>
         </table>
 
-
+        <a href="checkout.html"><img src="./img/icons/cart-solid-60.png" alt=""></a>
     </main>
 
     <footer>
@@ -110,5 +150,6 @@
         </div>
     </nav>
 </body>
+<script src="script/order.js"></script>
 <script src="script/checkout.js"></script>
 </html>

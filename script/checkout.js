@@ -1,29 +1,70 @@
-const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-const cartTable = document.querySelector('.cartInfo');
-const cartTotal = document.querySelector('.totalAmount');
+const orderItems = JSON.parse(localStorage.getItem('orderItems')) || [];
+const orderTable = document.querySelector('.orderInfo');
+const orderTotal = document.querySelector('.totalOrder');
 
 
-cartItems.forEach(cartItem => {
-    const subTot = cartItem.qty * cartItem.price;
+orderItems.forEach(orderItem => {
+    const subTot = orderItem.qty * orderItem.price;
 
     const tableRow = document.createElement('tr');
-    tableRow.setAttribute('data-code',cartItem.code);
+    tableRow.setAttribute('data-code',orderItem.code);
 
     tableRow.innerHTML = `
-    <td>${cartItem.name}</td>
-    <td>${cartItem.price}</td>
-    <td><input type="number" min="1" step="1" class="tableQty" value="${cartItem.qty}" data-code="${cartItem.code}"></td>
+    <td>${orderItem.name}</td>
+    <td>${orderItem.price}</td>
+    <td><input type="number" min="1" step="1" class="tableQty" value="${orderItem.qty}" data-code="${orderItem.code}"></td>
     <td class="tablesubTot">LKR ${subTot.toFixed(2)}</td>
     `
-    cartTable.appendChild(tableRow);
+    orderTable.appendChild(tableRow);
 })
 
 let total = 0;
-[...cartTable.rows].forEach(row => {
+[...orderTable.rows].forEach(row => {
     const subtotalCell = row.querySelector('.tablesubTot');
     if (subtotalCell){
         total += parseFloat(subtotalCell.textContent.replace('LKR ',''));
     }
 });
 
-cartTotal.textContent = `LKR ${total.toFixed(2)}`;
+orderTotal.textContent = `LKR ${total.toFixed(2)}`;
+
+
+document.querySelectorAll('.tableQty').forEach(updateQty => {
+    updateQty.addEventListener('input', () => {
+        const row =  updateQty.closest('tr');
+        const code = updateQty.dataset.code;
+        const newQty = parseInt(updateQty.value);
+        if (isNaN(newQty) || newQty < 1) return;
+        
+        let orderItems = [];
+
+        try {
+            const stored = JSON.parse(localStorage.getItem('orderItems'));
+            if (Array.isArray(stored)) {
+                orderItems = stored
+            }
+        } catch(e) {
+            console.error('Invalid data in storage. Resetting');
+            localStorage.removeItem('orderItems');
+        }
+
+        
+        const item = orderItems.find(item => item.code === code);
+        if (item) {
+            item.qty = newQty;
+            localStorage.setItem('orderItems', JSON.stringify(orderItems));
+
+            const subtotalCell = row.querySelector('.tablesubTot');
+            const subTotal = item.qty * item.price;
+            subtotalCell.textContent = `LKR ${subTotal.toFixed(2)}`;
+
+            let total = 0;
+            document.querySelectorAll('.tablesubTot').forEach(cell => {
+                const val = parseFloat(cell.textContent.replace('LKR ', ''));
+                total += val;
+            });
+
+            document.querySelector('.totalOrder').textContent = `LKR ${total.toFixed(2)}`
+        }
+    });
+});

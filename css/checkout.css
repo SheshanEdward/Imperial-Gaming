@@ -14,11 +14,15 @@
 }
 
 
-
-
 /* Table */
 table, th, td {
     border-collapse: collapse;
     border: 2px solid white;
     color: white;
+}
+
+table {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 3%;
 }

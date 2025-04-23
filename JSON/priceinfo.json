@@ -5,7 +5,7 @@
 
     {"code" : "prod03", "name" : "PlayStation 5 Pro", "price" : "200,000", "image" : "./img/copy/ps5-pro.jpg"},
 
-    {"code" : "prod04", "name" : "Xbox Series X", "price" : "200,000", "image" : "../img/copy/xbox-x.jpg"},
+    {"code" : "prod04", "name" : "Xbox Series X", "price" : "200,000", "image" : "./img/copy/xbox-x.jpg"},
 
     {"code" : "prod05", "name" : "Xbox Series S", "price" : "150,000", "image" : "./img/copy/xbox-s.jpg"},
 
