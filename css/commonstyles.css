@@ -51,7 +51,7 @@ body {
 /* Navigation Bar - Mobile View */
 #navbar {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 1fr;
     position: fixed;
     bottom: 0;

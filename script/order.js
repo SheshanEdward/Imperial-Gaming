@@ -51,6 +51,6 @@ document.querySelectorAll('.addtoCart').forEach(button => {
     
         localStorage.setItem('orderItems', JSON.stringify(orderItems));
         alert('Item has been added to cart successfully!')
-        console.log("button was clicked")
+        location.reload();
     });
 });

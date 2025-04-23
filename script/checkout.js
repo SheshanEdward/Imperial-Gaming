@@ -98,6 +98,29 @@ document.querySelectorAll('.deleteItem').forEach(button => {
         localStorage.setItem('orderItems', JSON.stringify(orderItems));
 
         button.closest('tr').remove();
+        alert('Item removed from cart.')
         updateTotal();
-    })
+    });
+});
+
+
+document.querySelector('.clearCart').addEventListener('click', () => {
+    localStorage.removeItem('orderItems');
+    document.querySelector('.orderInfo').innerHTML = '';
+    updateTotal();
+    alert('Cart Cleared.')
+});
+
+
+document.querySelector('.addFav').addEventListener('click', () => {
+    const orderItems = JSON.parse(localStorage.getItem('orderItems')) || [];
+    localStorage.setItem('favItems', JSON.stringify(orderItems));
+    alert('Successfully added to favourties!')
+});
+
+document.querySelector('.applyFav').addEventListener('click', () => {
+    const favItems = JSON.parse(localStorage.getItem('favItems')) || [];
+    
+    localStorage.setItem('orderItems', JSON.stringify(favItems));
+    location.reload();
 })
