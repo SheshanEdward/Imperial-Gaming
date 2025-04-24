@@ -27,14 +27,38 @@ table {
     margin-top: 3%;
 }
 
+@media (max-width : 768px) {
+    table input {
+        width: 15vw;
+    }
+
+    tbody {
+        font-size: 3vw;
+    }
+}
+
+table input {
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+table button {
+    background-color: red;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+}
+
 /* Form */
 
 form {
     color: white;
     font-size: 3vw;
     margin-left: 3%;
+    margin-top: 5%;
     width: 90%;
-    background-color: #3B1C32;
+    border: 2px solid #6A1E55;
     padding-left: 15px;
     padding-top: 5px;
     border-radius: 15px;
@@ -57,4 +81,33 @@ textarea {
     input[type="text"],input[type="tel"],input[type="email"] {
         width: 35%;
     }
+}
+
+/* Buttons */
+
+#clrbtn, #addfavbtn, #applyfavbtn, #paybtn, #resetbtn {
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+@media (min-width : 768px) {
+    #clrbtn {
+        margin-left: 2.5%;
+    }
+}
+
+#addfavbtn {
+    background-color: palevioletred;
+}
+
+#applyfavbtn, #paybtn {
+    background-color: #6A1E55;
+}
+
+#clrbtn, #resetbtn {
+    background-color: red;
 }
