@@ -26,3 +26,35 @@ table {
     margin-left: 2.5%;
     margin-top: 3%;
 }
+
+/* Form */
+
+form {
+    color: white;
+    font-size: 3vw;
+    margin-left: 3%;
+    width: 90%;
+    background-color: #3B1C32;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+
+textarea {
+    width: 90%;
+    height: 50%;
+}
+
+
+@media (min-width:768px) {
+
+    form {
+        font-size: 20px;
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    input[type="text"],input[type="tel"],input[type="email"] {
+        width: 35%;
+    }
+}

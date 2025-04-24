@@ -123,4 +123,16 @@ document.querySelector('.applyFav').addEventListener('click', () => {
     
     localStorage.setItem('orderItems', JSON.stringify(favItems));
     location.reload();
-})
+});
+
+
+document.querySelector('.payNow').addEventListener('click', () => {
+    const today = new Date();
+    const deliveryDate = new Date(today);
+    deliveryDate.setDate(today.getDate() + 8);
+
+    const formatted = deliveryDate.toISOString().split('T')[0];
+    
+    alert('Payment Successful! Order will be delivered on ' + formatted);
+    location.reload();
+});
