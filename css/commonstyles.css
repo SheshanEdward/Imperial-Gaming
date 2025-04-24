@@ -54,11 +54,11 @@ body {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     position: fixed;
-    bottom: 0;
+    bottom: 1vh;
     background-color: black;
     border: 2px solid #6A1E55;
     padding: 0;
-    width: 100%;
+    width: 99%;
     height: 7vh;
     align-items: center;
 }
@@ -115,7 +115,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: fit-content;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     margin-top: 100px;
 }
 
