@@ -27,7 +27,14 @@ document.querySelectorAll('.addtoCart').forEach(button => {
         const name = container.querySelector('.orderName').textContent;
         const price = parseFloat(container.querySelector('.orderPrice').textContent.replace('LKR ', '').replace(',',''));
         const qty = parseInt(container.querySelector('.orderQty').value);
-    
+
+
+        if(isNaN(qty) || qty < 1) {
+            alert('Please enter a quantity!');
+            return;
+        }
+
+        
         const orderItem = {code, name, price, qty};
         let orderItems = [];
     
