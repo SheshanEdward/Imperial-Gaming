@@ -29,7 +29,7 @@ document.querySelectorAll('.addtoCart').forEach(button => {
         const qty = parseInt(container.querySelector('.orderQty').value);
 
 
-        if(isNaN(qty) || qty < 1) {
+        if(isNaN(qty) || qty < 1) {//Check if a user has entered a valid quantity
             alert('Please enter a quantity!');
             return;
         }

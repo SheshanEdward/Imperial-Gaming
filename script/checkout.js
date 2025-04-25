@@ -1,4 +1,4 @@
-const orderItems = JSON.parse(localStorage.getItem('orderItems')) || [];
+const orderItems = JSON.parse(localStorage.getItem('orderItems')) || [];//Retrieve the cart from local storage
 const orderTable = document.querySelector('.orderInfo');
 const orderTotal = document.querySelector('.totalOrder');
 
@@ -6,7 +6,7 @@ const orderTotal = document.querySelector('.totalOrder');
 orderItems.forEach(orderItem => {
     const subTot = orderItem.qty * orderItem.price;
 
-    const tableRow = document.createElement('tr');
+    const tableRow = document.createElement('tr');//Creating a table row(not visible till appended)
     tableRow.setAttribute('data-code',orderItem.code);
 
     tableRow.innerHTML = `
@@ -38,8 +38,8 @@ function updateTotal() {
     document.querySelector('.totalOrder').textContent = `LKR ${total.toFixed(2)}`
 }
 
-
-document.querySelectorAll('.tableQty').forEach(updateQty => {
+//to update total, sutotal and quantity values when changes are made in the cart table
+document.querySelectorAll('.tableQty').forEach(updateQty => { 
     updateQty.addEventListener('input', () => {
         const row =  updateQty.closest('tr');
         const code = updateQty.dataset.code;
@@ -48,7 +48,7 @@ document.querySelectorAll('.tableQty').forEach(updateQty => {
         
         let orderItems = [];
 
-        try {
+        try {//Safe way to load Array due to unexpected error when using the "JSON.parse(localStorage.getItem('')) || []" method
             const stored = JSON.parse(localStorage.getItem('orderItems'));
             if (Array.isArray(stored)) {
                 orderItems = stored
@@ -122,17 +122,20 @@ document.querySelector('.applyFav').addEventListener('click', () => {
     const favItems = JSON.parse(localStorage.getItem('favItems')) || [];
     
     localStorage.setItem('orderItems', JSON.stringify(favItems));
+    alert('Favourites have been added to cart!')
     location.reload();
 });
 
 
 document.querySelector('form').addEventListener('submit', () => {
-    const today = new Date();
+    const today = new Date();//Getting today's date and time
     const deliveryDate = new Date(today);
-    deliveryDate.setDate(today.getDate() + 8);
+    deliveryDate.setDate(today.getDate() + 8);//Set the delivery date to 08 days from the date of order placement
 
-    const formatted = deliveryDate.toISOString().split('T')[0];
+    const formatted = deliveryDate.toISOString().split('T')[0];//Using formatting to make the date readable
     
     alert('Payment Successful! Order will be delivered on ' + formatted);
-    location.reload();
+    localStorage.removeItem('orderItems');//Clear the cart after the successful order placement
+    document.querySelector('.orderInfo').innerHTML = '';
+    location.reload();//refresh page to view updated cart
 });
