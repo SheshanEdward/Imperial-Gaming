@@ -126,7 +126,7 @@ document.querySelector('.applyFav').addEventListener('click', () => {
 });
 
 
-document.querySelector('.payNow').addEventListener('click', () => {
+document.querySelector('form').addEventListener('submit', () => {
     const today = new Date();
     const deliveryDate = new Date(today);
     deliveryDate.setDate(today.getDate() + 8);

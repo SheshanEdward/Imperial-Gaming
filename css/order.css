@@ -48,15 +48,10 @@ header {
     text-align: center;
     width: 100%;
     height: 100%;
-    position: absolute;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.9);
-    opacity: 0;
     font-weight: bolder;
-}
-
-#price:hover {
-    opacity: 1;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 @media (min-width:768px) {
@@ -73,9 +68,6 @@ header {
     text-align: center;
 }
 
-/* #name p {
-    color: white;
-} */
 
 @media (min-width:768px) {
 
@@ -91,7 +83,6 @@ header {
     align-items: center;
     width: 95%;
     height: auto;
-    position: relative;
     margin-left: 2.5%;
 }
 
