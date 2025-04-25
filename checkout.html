@@ -47,22 +47,22 @@
         <form>
             <div>
                 <label for="fname">First Name: </label>
-                <input type="text" id="fname" placeholder="First Name" required pattern="[A-Za-z/s]" required>
+                <input type="text" id="fname" placeholder="First Name" required pattern="[A-Za-z\s]+">
             </div>
             <br>
             <div>
                 <label for="lname">Last Name: </label>
-                <input type="text" id="lname" placeholder="Last Name" required pattern="[A-Za-z/s]" required>
+                <input type="text" id="lname" placeholder="Last Name" required pattern="[A-Za-z\s]+">
             </div>
             <br>
             <div>
                 <label for="contact">Contact No: </label>
-                <input type="tel" id="contact" placeholder="077 123 4567" required pattern="[0-9/s]{10}" required>
+                <input type="tel" id="contact" placeholder="077 123 4567" required pattern="[0-9]{10}">
             </div>
             <br>
             <div>
                 <label for="address">Address: </label>
-                <input type="text" id="address" placeholder="Delivery address" required pattern="[A-Za-z/s]" required>
+                <input type="text" id="address" placeholder="Delivery address" required pattern="[A-Za-z\s]+">
             </div>
             <br>
             <div>
@@ -72,12 +72,12 @@
             <br>
             <div>
                 <label for="cardNo">Card No: </label>
-                <input type="text" id="cardNo" placeholder="1234-1234-1234-1234" required pattern="[0-9/s]{16}" required>
+                <input type="text" id="cardNo" placeholder="1234-1234-1234-1234" required pattern="[0-9]{16}">
             </div>
             <br>
             <div>
                 <label for="cvvNo">CVV No: </label>
-                <input type="text" id="cvvNo" placeholder="123 or 1234" required pattern="[0-9/s]{4}" required>
+                <input type="text" id="cvvNo" placeholder="123 or 1234" required pattern="[0-9]{4}">
             </div>
             <button id="paybtn" type="submit" class="payNow">Place Order</button>
             <input id="resetbtn" type="reset">
